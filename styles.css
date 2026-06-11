@@ -644,6 +644,7 @@ h1 {
 
 .site-footer {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   gap: 16px;
   width: min(1180px, calc(100% - 32px));
@@ -660,6 +661,17 @@ h1 {
 .site-footer p:first-child {
   color: var(--text);
   font-weight: 900;
+}
+
+.site-footer a {
+  color: var(--accent);
+  font-weight: 800;
+}
+
+.site-footer a:hover,
+.site-footer a:focus-visible {
+  text-decoration: underline;
+  outline: none;
 }
 
 @media (max-width: 980px) {
